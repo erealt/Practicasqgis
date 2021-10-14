@@ -16,3 +16,13 @@ from qgis.core import *
 uri = 'file:/home/sty/Descargas/feed.csv?delimiter=,'
 csv_file = QgsVectorLayer(uri, 'DatosReales', 'delimitedtext')
 QgsProject.instance().addMapLayer(csv_file)
+
+
+-------CARGA EL CSV(feed.csv) con coordenadas -LINUX-------------
+import os # This is is needed in the pyqgis console also
+from qgis.core import *
+
+
+uri = 'file:/home/sty/Descargas/feed.csv?delimiter={}&xField={}&yField={}'.format(os.getcwd(), ",", "38.977634108833875", "-1.856576728915285")
+csv_file = QgsVectorLayer(uri, 'DatosReales', 'delimitedtext')
+QgsProject.instance().addMapLayer(csv_file)
