@@ -1,5 +1,5 @@
 --------CARGA EL CSV-----------
-import os # This is is needed in the pyqgis console also
+import os
 from qgis.core import *
 
 
