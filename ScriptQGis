@@ -1,4 +1,4 @@
--------CARGA EL CSV(feed.csv) con coordenadas -LINUX-------------
+-------CARGA EL CSV(prueba.csv) con coordenadas -LINUX-------------
 
 import os # This is is needed in the pyqgis console also
 from qgis.core import *
