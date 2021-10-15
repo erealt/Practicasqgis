@@ -19,13 +19,6 @@ QgsProject.instance().addMapLayer(csv_file)
 
 
 -------CARGA EL CSV(feed.csv) con coordenadas -LINUX-------------
-import os # This is is needed in the pyqgis console also
-from qgis.core import *
-
-
-uri = "file:///home/sty/Descargas/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(";", "x", "y","epsg:4326")
-vlayer = QgsVectorLayer(uri, "layer name you like", "delimitedtext")
-QgsProject.instance().addMapLayer(vlayer)
 
 
 ------------------CREAR UN NUEVO CSV CON LA PRIMERA LINEA DE UN FEED.CSV(PYTHON)---------------
