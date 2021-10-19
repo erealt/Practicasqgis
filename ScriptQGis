@@ -8,6 +8,18 @@ uri = "file:///home/sty/Descargas/prueba.csv?delimiter={}&xField={}&yField={}&cr
 vlayer = QgsVectorLayer(uri, "layer name you like", "delimitedtext")
 QgsProject.instance().addMapLayer(vlayer)
 
+--------------------carga el CSV desde el terminal-LINUX------------
+#! /usr/bin/env python3
+
+import os # This is is needed in the pyqgis console also
+from qgis.core import *
+QgsApplication.setPrefixPath("/usr/bin/qgis", True)
+qgs = QgsApplication([], False)
+qgs.initQgis()
+uri = "file:///home/sty/Descargas/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".fo>
+vlayer = QgsVectorLayer(uri, "capita", "delimitedtext")
+QgsProject.instance().addMapLayer(vlayer)
+qgs.exitQgis()
 
 ------------------CREAR UN NUEVO CSV CON LA PRIMERA LINEA DE UN FEED.CSV(PYTHON)---------------
 import csv
