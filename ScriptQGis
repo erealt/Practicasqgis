@@ -22,7 +22,7 @@ vlayer = QgsVectorLayer(uri, "capita", "delimitedtext")
 QgsProject.instance().addMapLayer(vlayer)
 qgs.exitQgis()
 
------------------------CARGA Y CREA EL SHAPEFILE-LUNUX------------FUNCIONA-TERMINAL QGIS
+-----------------------CARGA CSV Y CREA EL SHAPEFILE-LUNUX------------FUNCIONA-TERMINAL QGIS
 
 import os # This is is needed in the pyqgis console also
 from qgis.core import *
@@ -35,4 +35,21 @@ QgsProject.instance().addMapLayer(vlayer)
 
 QgsVectorFileWriter.writeAsVectorFormat(vlayer, basepath+"/terremotos.shp", "", vlayer.crs(), "ESRI Shapefile")
 
+--------------------CARGA CSV Y CREA EL SHAPEFILE-LINUX-----------------NO FUNCIONA- BASH
+#! /usr/bin/env python3
+import os # This is is needed in the pyqgis console also
+from qgis.core import *
+from pathlib import Path
 
+QgsApplication.setPrefixPath("/usr/bin/qgis", True)
+qgs = QgsApplication([], True)
+
+
+qgs.initQgis()
+basepath = Path().home().joinpath("Documentos").as_posix()
+uri = "file:///home/sty/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
+vlayer = QgsVectorLayer(uri, "capita2", "delimitedtext")
+QgsProject.instance().addMapLayer(vlayer)
+
+QgsVectorFileWriter.writeAsVectorFormat(vlayer, basepath+"/terremotos.shp", "", vlayer.crs(), "ESRI Shapefile")
+qgs.exitQgis()
