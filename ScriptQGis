@@ -1,38 +1,38 @@
--------CARGA EL CSV(prueba.csv) con coordenadas -LINUX-------------
+-------CARGA EL CSV(prueba.csv) con coordenadas -LINUX-------------FUNCIONA-TERMINAL QGIS
 
 import os # This is is needed in the pyqgis console also
 from qgis.core import *
 
 
-uri = "file:///home/sty/Descargas/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
-vlayer = QgsVectorLayer(uri, "layer name you like", "delimitedtext")
+uri = "file:///home/sty/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
+vlayer = QgsVectorLayer(uri, "enfin", "delimitedtext")
 QgsProject.instance().addMapLayer(vlayer)
 
---------------------carga el CSV desde el terminal-LINUX------------
+--------------------carga el CSV desde el terminal-LINUX------------NO FUNCIONA-BASH
 #! /usr/bin/env python3
-
 import os # This is is needed in the pyqgis console also
 from qgis.core import *
+
 QgsApplication.setPrefixPath("/usr/bin/qgis", True)
 qgs = QgsApplication([], False)
+
 qgs.initQgis()
-uri = "file:///home/sty/Descargas/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".fo>
+uri = "file:///home/sty/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
 vlayer = QgsVectorLayer(uri, "capita", "delimitedtext")
 QgsProject.instance().addMapLayer(vlayer)
 qgs.exitQgis()
 
-------------------CREAR UN NUEVO CSV CON LA PRIMERA LINEA DE UN FEED.CSV(PYTHON)---------------
-import csv
+-----------------------CARGA Y CREA EL SHAPEFILE-LUNUX------------FUNCIONA-TERMINAL QGIS
 
-with open('C:/Users/realt/OneDrive/Escritorio/feed.csv') as File:
-    reader = csv.reader(File, delimiter=',', quotechar=',',
-                        quoting=csv.QUOTE_MINIMAL)
-    contador =0; 
-    
-    for row in reader:
-        if contador<=1:
-            contador=contador +1;
-            myFile = open('example2.csv', 'w')
-        with myFile:
-             writer = csv.writer(myFile)
-             writer.writerows(row)
+import os # This is is needed in the pyqgis console also
+from qgis.core import *
+from pathlib import Path
+
+basepath = Path().home().joinpath("Documentos").as_posix()
+uri = "file:///home/sty/prueba.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
+vlayer = QgsVectorLayer(uri, "capita2", "delimitedtext")
+QgsProject.instance().addMapLayer(vlayer)
+
+QgsVectorFileWriter.writeAsVectorFormat(vlayer, basepath+"/terremotos.shp", "", vlayer.crs(), "ESRI Shapefile")
+
+
