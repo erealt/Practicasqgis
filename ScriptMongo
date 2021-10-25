@@ -8,3 +8,29 @@ mydoc = mycol.find(myquery)
 
 for x in mydoc:
     print (x)
+    
+    
+    ----------------------CONECTA A SERVIDOR ---------
+    
+#! /usr/bin/env python
+import pymongo
+#from pymongo import MongoClient
+#import csv
+
+myclient=pymongo.MongoClient("mongodb://pluton.i3a.uclm.es:27017/")
+mydb=myclient["kikeDev"]
+mycol=mydb["AirMeasurement"]
+
+x=[]
+consulta =list(mycol.find().skip(mycol.count() - 3))
+
+#for x in consulta:
+#       myFile = open('datos.csv', 'w')
+#       with myFile:
+#             writer = csv.writer(myFile)
+
+ #            writer.writerows(x)
+for i in consulta:
+         x.append(i)
+print(x)
+
