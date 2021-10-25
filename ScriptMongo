@@ -34,3 +34,8 @@ for i in consulta:
          x.append(i)
 print(x)
 
+
+--------------------EXPORTAR TODO EL FICHERO DE DATOS A UN FICHERO .CSV----------------------
+mongoexport --uri='mongodb://localhost:27017/prueba' --collection=prueba --out=fichero.csv
+
+
