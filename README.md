@@ -9,3 +9,5 @@ https://python.hotexamples.com/es/examples/qgis.core/QgsApplication/initQgis/pyt
 
 COMO EJECUTAR SCRIPT PYTHON DESDE FUERA
 https://sisteme-ig.com/questions/180/como-ejecutar-un-script-de-python-simple-para-qgis-desde-afu
+
+https://mappinggis.com/2015/05/configurar-pycharm-para-usarlo-con-qgis/
