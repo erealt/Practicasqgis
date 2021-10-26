@@ -1,4 +1,3 @@
-
 #! /usr/bin/env python
 import pymongo
 #from pymongo import MongoClient
@@ -9,7 +8,8 @@ mydb=myclient["kikeDev"]
 mycol=mydb["AirMeasurement"]
 
 x=[]
-consulta =list(mycol.find().skip(mycol.count() - 3))
+consulta =list(mycol.find().sort("_id",-1).limit(3))
+
 
 
 for i in consulta:
@@ -21,6 +21,7 @@ with myFile:
 
 
         writer.writerow(x)
+
 
 
 
