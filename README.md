@@ -16,4 +16,6 @@ https://mappinggis.com/2015/05/configurar-pycharm-para-usarlo-con-qgis/
 Instalar MONGO DB:
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
+CREAR CAPA QGIS:
+https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/loadlayer.html
 
