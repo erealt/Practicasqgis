@@ -21,3 +21,7 @@ https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/loadlayer.html
 
 CREAR SHAPEFILE EN LINUX:
 https://gis.stackexchange.com/questions/283335/creating-shapefile-in-standalone-script-using-pyqgis/283389
+
+
+
+https://subscription.packtpub.com/book/application-development/9781783984985/1/ch01lvl1sec10/installing-qgis-for-development
