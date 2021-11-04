@@ -31,3 +31,6 @@ https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/plugins/ide_debuggi
 
 SERVIDOR QGIS para usar web:
 https://docs.qgis.org/3.16/es/docs/server_manual/index.html
+
+PYGIS-AÑADIR CAPAS
+https://masquesig.com/2014/01/03/pyqgis-cargar-y-anadir-capas/
