@@ -28,3 +28,6 @@ https://subscription.packtpub.com/book/application-development/9781783984985/1/c
 
 CONECTAR PYCHARM UBUNTU
 https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/plugins/ide_debugging.html
+
+SERVIDOR QGIS para usar web:
+https://docs.qgis.org/3.16/es/docs/server_manual/index.html
