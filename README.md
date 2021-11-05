@@ -44,3 +44,9 @@ https://leafletjs.com/
 
 PYQGIS -DOCUMENTACION:
 https://qgis.org/pyqgis/3.6/index.html
+
+TUTO GEOJSON:
+https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefile/
+
+VIDEO LEAFLET:
+https://www.youtube.com/watch?v=KVjdId6NelA&t=422s
