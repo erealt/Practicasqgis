@@ -40,3 +40,7 @@ https://youtube.com/playlist?list=PLaaTcPGicjqgLAUhR_grKBGCXbyKaP7qR
 
 LEAFLET documentacion:
 https://leafletjs.com/
+
+
+PYQGIS -DOCUMENTACION:
+https://qgis.org/pyqgis/3.6/index.html
