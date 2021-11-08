@@ -45,6 +45,9 @@ https://leafletjs.com/
 PYQGIS -DOCUMENTACION:
 https://qgis.org/pyqgis/3.6/index.html
 
+SCRIPTING EN PYTHON -QGIS
+https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/
+
 TUTO GEOJSON:
 https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefile/
 
