@@ -13,7 +13,7 @@ vlayer = QgsVectorLayer(uri, "capa", "delimitedtext")
 QgsProject.instance().addMapLayer(vlayer)
 
 
-path = r'C:\Users\realt\OneDrive\Escritorio\aire'
+path = r'C:\Users\realt\OneDrive\Escritorio\aire\aire'
 
 
 options = QgsVectorFileWriter.SaveVectorOptions()
