@@ -41,15 +41,17 @@ https://youtube.com/playlist?list=PLaaTcPGicjqgLAUhR_grKBGCXbyKaP7qR
 LEAFLET documentacion:
 https://leafletjs.com/
 
-
 PYQGIS -DOCUMENTACION:
 https://qgis.org/pyqgis/3.6/index.html
 
 SCRIPTING EN PYTHON -QGIS
 https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/
 
-TUTO GEOJSON:
-https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefile/
-
 VIDEO LEAFLET:
 https://www.youtube.com/watch?v=KVjdId6NelA&t=788s
+
+TUTO añadir capa SHAPEFILE a un mapa con leaflet:
+https://mappinggis.com/2013/08/como-crear-un-mapa-web-a-partir-de-un-shapefile/
+https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefile/
+
+
