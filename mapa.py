@@ -11,7 +11,7 @@ qgs = QgsApplication([], False)
 qgs.initQgis()
 
 #AÑADE CAPA CON LOS DATOS DE LOS 3 PUNTOS DEL CSV
-uri = "file:////home/estela/PycharmProjects/mapas/aire.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
+uri = "file:////home/estela/PycharmProjects/mapas/puntosaire.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
 vlayer = QgsVectorLayer(uri, "capa", "delimitedtext")
 
 
