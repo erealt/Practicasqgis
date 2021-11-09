@@ -1,5 +1,5 @@
 # Practicasqgis
-https://gis.stackexchange.com/questions/131764/running-processing-toolbox-outside-qgis-in-standalone-app
+
 https://gis.stackexchange.com/questions/334172/creating-standalone-application-in-qgis
 https://docs.qgis.org/3.16/en/docs/pyqgis_developer_cookbook/intro.html
 https://gis.stackexchange.com/questions/152320/setting-pythonpath-for-compiled-qgis-version-on-linux
@@ -25,6 +25,9 @@ https://gis.stackexchange.com/questions/283335/creating-shapefile-in-standalone-
 
 
 https://subscription.packtpub.com/book/application-development/9781783984985/1/ch01lvl1sec10/installing-qgis-for-development
+
+ERROR de rutas en UBUNTU con QGIS:
+https://gis.stackexchange.com/questions/131764/running-processing-toolbox-outside-qgis-in-standalone-app
 
 CONECTAR PYCHARM UBUNTU
 https://docs.qgis.org/3.16/es/docs/pyqgis_developer_cookbook/plugins/ide_debugging.html
