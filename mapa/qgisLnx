@@ -1,0 +1,21 @@
+#! /usr/bin/env python3
+import os # This is is needed in the pyqgis console also
+from qgis.core import *
+from pathlib import Path
+
+QgsApplication.setPrefixPath("/usr", True)
+qgs = QgsApplication([], False)
+
+
+qgs.initQgis()
+uri = "file:///home/sty/mapa/puntosaire.csv?delimiter={}&xField={}&yField={}&crs={}".format(",", "x", "y","epsg:4326")
+vlayer = QgsVectorLayer(uri, "capita2", "delimitedtext")
+QgsProject.instance().addMapLayer(vlayer)
+
+path = "/home/sty/mapa/shapefiles/puntosAire"
+
+options = QgsVectorFileWriter.SaveVectorOptions()
+options.driverName = "ESRI Shapefile"
+
+QgsVectorFileWriter.writeAsVectorFormatV2(vlayer, path, QgsCoordinateTransformContext(), options)
+
