@@ -57,4 +57,6 @@ TUTO añadir capa SHAPEFILE a un mapa con leaflet:
 https://mappinggis.com/2013/08/como-crear-un-mapa-web-a-partir-de-un-shapefile/
 https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefile/
 
+menu desplegable leaflet:
+https://www.unigis.es/leaflet-materialize/
 
