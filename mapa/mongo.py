@@ -38,6 +38,53 @@ df.to_csv("puntosaire.csv", sep=',', index=False)
 
 
 
-import pandas as pd
-csv_data = pd.read_csv("puntosaire.csv")
-csv_data.to_json("puntosAire.json", orient = "records")
+import csv, json
+from geojson import Feature, FeatureCollection, Point
+
+features = []
+with open('puntosaire.csv') as csvfile:
+    reader = csv.reader(csvfile)
+    for _id, date, no2C, timestampSensor, o3, pm10, pressure, co, batteryVolts,no2, idStation, serial, pm1, coC, pm2_5, temperature, humidity,luminosity, batteryCurrent, o3C, timestaup, batteryLevel,x,y in reader:
+        features.append({
+            "type": "Feature",
+             "properties":{
+                 "_id":_id,
+                 "date":date,
+                 "no2C":no2C,
+                 "timestampSensor":timestampSensor,
+                 "o3":o3,
+                 "pm10":pm10,
+                 "preassure":pressure,
+                 "co":co,
+                 "batteryVolts":batteryVolts,
+                 "no2":no2,
+                 "idStation":idStation,
+                 "serial":serial,
+                 "pm1":pm1,
+                 "coC":coC,
+                 "pm2_5":pm2_5,
+                 "temperature":temperature,
+                 "humidity":humidity,
+                 "luminosity":luminosity,
+                 "batteryCurrent":batteryCurrent,
+                 "o3C":o3C,
+                 "timestaup":timestaup,
+                 "batteryLevel":batteryLevel,
+                 "x":x,
+                 "y":y
+             },
+            "geometry":{"type":"Point","coordinates":[x,y]}
+        }
+
+        )
+
+puntosAire={
+    "type":"FeatureCollection",
+    "name": "puntosAire",
+    "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
+    "features":features }
+
+
+with open("puntosAire.json", "w") as f:
+    f.write(json.dumps(puntosAire))
+
