@@ -1,5 +1,9 @@
 # Practicasqgis
 
+MAPAS modelo:
+http://www.ica.miteco.es/
+http://pagina.jccm.es/medioambiente/rvca/estaciones/ultimos/temporales_gen_1.htm
+
 https://gis.stackexchange.com/questions/334172/creating-standalone-application-in-qgis
 https://docs.qgis.org/3.16/en/docs/pyqgis_developer_cookbook/intro.html
 https://gis.stackexchange.com/questions/152320/setting-pythonpath-for-compiled-qgis-version-on-linux
