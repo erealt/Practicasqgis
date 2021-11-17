@@ -60,3 +60,6 @@ https://zonegis.es/creando-un-mapa-web-de-leaflet-partiendo-de-una-capa-shapefil
 menu desplegable leaflet:
 https://www.unigis.es/leaflet-materialize/
 
+ESTADISTICAS:
+https://norfipc.com/codigos/como-crear-insertar-graficos-chart.js-paginas-web.php
+https://www.chartjs.org/docs/latest/samples/bar/stacked.html  PAGINA OFICIAL DE LA LIBRERIA CHART
