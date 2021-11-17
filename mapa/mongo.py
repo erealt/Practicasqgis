@@ -11,9 +11,7 @@ mycol = mydb["AirMeasurement"]
 
 x = []
 
-# consulta =mycol.find().sort("_id",-1).limit(3)
-
-for i in mycol.find().sort("_id", 1).limit(3):
+for i in mycol.find().sort("_id", -1).limit(3):
     x.append(i)
 
 df = pd.DataFrame(x, columns=['_id', 'date', 'no2C', 'timestampSensor', 'o3', 'pm10', 'pressure', 'co', 'batteryVolts',
