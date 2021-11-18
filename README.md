@@ -73,3 +73,5 @@ ESTADISTICAS:
 https://norfipc.com/codigos/como-crear-insertar-graficos-chart.js-paginas-web.php
 
 https://www.chartjs.org/docs/latest/samples/bar/stacked.html  PAGINA OFICIAL DE LA LIBRERIA CHART
+
+CARGAR DATOS DE UN ARCHIVO EN EL GRAFICO https://www.youtube.com/watch?v=PK2LGc15Lkw
