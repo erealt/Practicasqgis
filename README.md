@@ -75,3 +75,5 @@ https://norfipc.com/codigos/como-crear-insertar-graficos-chart.js-paginas-web.ph
 https://www.chartjs.org/docs/latest/samples/bar/stacked.html  PAGINA OFICIAL DE LA LIBRERIA CHART
 
 CARGAR DATOS DE UN ARCHIVO CSV EN EL GRAFICO https://www.createwithdata.com/chartjs-and-csv/
+
+https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804-es
