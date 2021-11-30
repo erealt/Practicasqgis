@@ -1,32 +1,21 @@
+
 const tilesProvider ='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+var datosAire= //añadimos los datos de nuestra capa propia
+{
+"type": "FeatureCollection",
+"name": "datosAire",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": {"idStation": "Barrax" }, "geometry": { "type": "Point", "coordinates": [ -1.853862418305368, 38.977322663475398 ] } },
+{ "type": "Feature", "properties": { "idStation": "Gobierno" }, "geometry": { "type": "Point", "coordinates": [ -1.857766360298926, 38.991772976209432 ] } },
+{ "type": "Feature", "properties": { "idStation": "Poligono" }, "geometry": { "type": "Point", "coordinates": [ -1.88398252444569, 39.015499820206024 ] } }
+]
+}
 
-/*var hoy = new Date();
-var fecha = hoy.getDate() + '-' + ( hoy.getMonth() + 1 ) + '-' + hoy.getFullYear();
-var hora = hoy.getHours() + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
-var fechaYhora = fecha + ' ' + hora;*/
+let myMap = L.map('myMap').setView([38.99, -1.86],13)
 
-let myMap = L.map('myMap').setView([38.99, -1.86],13) 
-// crea el mapa con una posicion determinada en este caso la de Albacete, el 13 es el zoom inicial
-
-L.tileLayer(tilesProvider, {maxZoom: 18,}).addTo(myMap) 
-//agregamos al layer el mapa con openstream
+L.tileLayer(tilesProvider, {maxZoom: 18,}).addTo(myMap)
+ L.geoJson(datosAire).addTo(myMap) ;
 
 
-
-let geojson="puntosAire.json"
-
-fetch(
-geojson
-).then(
-    res=> res.json()
-
-).then(
-    data=>{
-       let geojsonlayer=L.geoJson(data,{
-           onEachFeature:function(features,layer){
-               layer.bindPopup(features.properties['idStation'])
-           }
-       }).addTo(myMap)
-    }
-)
 
