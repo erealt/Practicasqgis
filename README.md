@@ -77,3 +77,6 @@ https://www.chartjs.org/docs/latest/samples/bar/stacked.html  PAGINA OFICIAL DE 
 CARGAR DATOS DE UN ARCHIVO CSV EN EL GRAFICO https://www.createwithdata.com/chartjs-and-csv/
 
 https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804-es
+
+HTML componentes
+https://www.w3schools.com/w3css/w3css_tables.asp
