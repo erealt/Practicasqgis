@@ -80,3 +80,4 @@ https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tas
 
 HTML componentes
 https://www.w3schools.com/w3css/w3css_tables.asp
+https://www.w3schools.com/w3css/w3css_sidebar.asp
