@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>ICA Albacete</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
+   <meta charset="UTF-8">
+   <title>ICA Albacete</title>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
+
 <body>
    <h1>Indice de calidad del aire - Albacete</h1>
-<div id="myMap" style="height:600px"></div>
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="map.js"></script>
-<script type="text/json" src="puntosAire.json"></script>
-<canvas id="myChart" width="1185" height="400"></canvas>
-<script src="js/chart.js"></script>
+   <!-- Sidebar -->
+   <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+   </div>
+   <div id="myMap" style="height:600px"></div>
+   <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+   <div class="w3-container"></div>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="map.js"></script>
+   <script type="text/json" src="puntosAire.json"></script>
+   <canvas id="myChart" width="1185" height="400"></canvas>
+   <script src="chart.js"></script>
    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-  
-   <!-- <script src="grafica.js"></script>-->
+   <script src="grafica.js"></script>
+   <script>
+      function w3_open() {
+         document.getElementById("mySidebar").style.display = "block";
+      }
 
+      function w3_close() {
+         document.getElementById("mySidebar").style.display = "none";
+      }
+   </script>
 
 </body>
+
 </html>
