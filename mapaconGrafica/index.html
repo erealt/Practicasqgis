@@ -12,23 +12,25 @@
 </head>
 
 <body>
-   <h1>Indice de calidad del aire - Albacete</h1>
+   <div class="w3-teal" style="width: 100%">
+         <h1>Índice de calidad del aire - Albacete</h1>
+   </div>
    <!-- Sidebar -->
    <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none;" id="mySidebar">
-      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>-->
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
       <canvas id="myChart" width="1185" height="400"></canvas>
    </div>
    <div id="myMap"></div>
    <style>
       #myMap {
-         height: 500px;
-         width: 1000px;
+         height: 100%;
+         width: 100%;
       }
 
       #myMap {
          position: absolute;
          left: 0px;
-         top: 0px;
+         top: 100px;
          z-index: -1;
       }
    </style>
